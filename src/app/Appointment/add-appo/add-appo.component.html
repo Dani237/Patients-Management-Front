@@ -1,0 +1,25 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Agregar Cita</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="#">Fecha:</label>
+          <input [(ngModel)]="appointment.dateAppointment" name="dateAppointment" required type="datetime-local" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="#">Nombre del paciente:</label>
+          <input [(ngModel)]="appointment.patientName" name="patientName" required type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="#">Consulta:</label>
+          <input [(ngModel)]="appointment.description" name="description" required type="text" class="form-control">
+        </div>
+        <button (click)="saveAppointment()" style="margin-top: 25px" class="btn btn-danger">Agregar</button>
+      </form>
+    </div>
+  </div>
+</div>
+

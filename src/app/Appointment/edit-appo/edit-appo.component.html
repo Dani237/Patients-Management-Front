@@ -1,0 +1,28 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Agregar Paciente</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="#">Fecha:</label>
+          <input [(ngModel)]="appointment.dateAppointment" name="dateAppointment" required="required" type="datetime-local" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="#">Nombre de Paciente:</label>
+          <input [(ngModel)]="appointment.patientName" name="patientName" required="required" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="#">Consulta:</label>
+          <input [(ngModel)]="appointment.description" name="description" required="required" type="text" class="form-control">
+        </div>
+
+        <button (click)="Update(appointment)" class="btn btn-danger">Actualizar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
